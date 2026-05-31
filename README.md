@@ -2,14 +2,6 @@
 
 Cross-platform advisory file locks for single-instance services, registries, and on-disk critical sections.
 
-## Install
-
-From [pkg.go.dev](https://pkg.go.dev/github.com/brandonkramer/filelock):
-
-```bash
-go get github.com/brandonkramer/filelock
-```
-
 ## Quick start
 
 ```go
@@ -34,9 +26,3 @@ err = filelock.WithSidecar(context.Background(), "/var/lib/myapp/state.json", fi
 | `Blocking()` | `Acquire` | Wait for lock instead of returning `ErrBusy` |
 | `NonBlocking()` | `With` | Try once; return `ErrBusy` when held |
 | `FileMode(mode)` | both | Permission bits for new lock files |
-
-## Development
-
-```bash
-make check
-```
