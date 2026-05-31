@@ -2,11 +2,15 @@ name: test
 
 on:
   push:
+    branches:
+      - '**'
     paths-ignore:
-      - '**.md'
+      - '**/*.md'
+      - '*.md'
   pull_request:
     paths-ignore:
-      - '**.md'
+      - '**/*.md'
+      - '*.md'
 
 permissions:
   contents: read
