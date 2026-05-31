@@ -56,6 +56,6 @@ Thumbs.db
 lefthook-local.yml
 lefthook-local.yaml
 
-# Registry flock sidecars (known-homes.json.lock, etc.)
+# Advisory lock sidecar files
 .lock
 *.lock
